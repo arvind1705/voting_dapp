@@ -1,0 +1,30 @@
+.headers {
+  padding-left: 5%;
+}
+
+.welcome {
+  padding-top: 3%;
+  font-size: 3.5em;
+  font-family: 'Hammersmith One';
+  color: #636e72;
+}
+
+.dashboardTitle {
+  padding-top: 2%;
+}
+
+.ballotImg {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  color: #CCCCCC;
+}
+
+.hovercontent {
+  background-color: #FFFFFF !important;
+}
+
+.hovercontent:hover {
+  background-color: #F0F8FF !important;
+  cursor: pointer; 
+}
