@@ -1,7 +1,10 @@
 const Sequelize = require("sequelize");
-const sequelize = new Sequelize("blockb", "root", "1705", {
-  // in mysql create databases 
-  dialect: "mysql"
+const sequelize = new Sequelize("blockballot", "root", "", {
+  // in mysql create databases blockballot
+  dialect: 'mysql',
+  dialectOptions: {
+    insecureAuth: true
+  }
 });
 
 sequelize
@@ -36,6 +39,14 @@ const Org = sequelize.define('org', {
     type: Sequelize.DATE(3),
     defaultValue: Sequelize.literal("CURRENT_TIMESTAMP(3)")
   },
+  resetToken: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+  resetExpiration: {
+    type: Sequelize.DATE,
+    allowNull: true
+  }
 });
 
 const Poll = sequelize.define("poll", {
