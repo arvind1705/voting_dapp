@@ -75,17 +75,3 @@
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.12"
  ```
- 
-## Blockchain Setup
-
-0. Install homebrew at https://brew.sh/
-1. Install geth:
-`brew tap ethereum/ethereum`
-`brew install ethereum`
-2. `npm run geth-server` to connect to the ethereum testnet
-3. Wait for blockchain to finish syncing
-4. In order to verify if the blockchain is done syncing, you can open a geth console with `geth attach data/geth.ipc` and run `eth.syncing`. This command should return 'false' once it's done syncing
-5. Create a wallet by running personal.newAccount('passphrase')
-6. Using the wallet address from the previous command, obtain money on the ethereum testnet by going to the faucet: https://faucet.rinkeby.io/
-
-
