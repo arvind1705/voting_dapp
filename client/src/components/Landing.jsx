@@ -33,7 +33,7 @@ class Landing extends React.Component {
             minHeight: 700,
             padding: '1em 0em',
             backgroundSize: 'cover',
-            backgroundImage: 'url(https://c1.staticflickr.com/1/820/39104766100_936bc7c75d_o.jpg)'
+            // backgroundImage: 'url(https://c1.staticflickr.com/1/820/39104766100_936bc7c75d_o.jpg)'
           }}
         >
           <Container
@@ -62,7 +62,7 @@ class Landing extends React.Component {
                 color: '#4183D9'
               }}
             >
-            Decentralized Voting.
+            Decentralized Voggggting.
             </h2>
           </Container>
         </Segment>
