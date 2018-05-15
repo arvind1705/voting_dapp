@@ -62,7 +62,7 @@ class Landing extends React.Component {
                 color: '#4183D9'
               }}
             >
-            Decentralized Voggggting.
+            Decentralized Voting.
             </h2>
           </Container>
         </Segment>
