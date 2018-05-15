@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize");
-const sequelize = new Sequelize("blockb", "root", "1705", {
+const sequelize = new Sequelize("vote", "root", "2323", {
   // in mysql create databases 
   dialect: "mysql"
 });
