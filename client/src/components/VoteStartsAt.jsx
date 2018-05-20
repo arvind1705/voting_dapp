@@ -21,7 +21,7 @@ class VoteStartsAt extends React.Component {
                 fontSize: '30px'
               }}
               >
-                BB
+                --
               </h3>
             </Menu.Item>
           </Link>

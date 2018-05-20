@@ -33,7 +33,7 @@ class Landing extends React.Component {
             minHeight: 700,
             padding: '1em 0em',
             backgroundSize: 'cover',
-            // backgroundImage: 'url(https://c1.staticflickr.com/1/820/39104766100_936bc7c75d_o.jpg)'
+            backgroundImage: 'url(https://c1.staticflickr.com/1/820/39104766100_936bc7c75d_o.jpg)'
           }}
         >
           <Container
@@ -42,7 +42,7 @@ class Landing extends React.Component {
           >
             <Header
               as="h1"
-              content="TEST"
+              content="Voting"
               style={{
                 fontSize: '5em',
                 fontWeight: 'normal',
@@ -62,11 +62,68 @@ class Landing extends React.Component {
                 color: '#4183D9'
               }}
             >
-            Decentralized Voting.
+            Decentralized Voting for a More Transparent World
             </h2>
           </Container>
         </Segment>
-        
+        <Segment
+          vertical
+          style={{
+            minHeight: 700,
+            padding: '1em 0em',
+            backgroundColor: '#F0F8FF'
+          }}
+        >
+          <Grid
+            container
+            stackable
+            verticalAlign="middle"
+            style={{
+              marginTop: '3em',
+              fontFamily: 'Roboto, sans-serif'
+            }}
+          >
+            <Grid.Row>
+              <Grid.Column width={8}>
+                <Header
+                  as="h3"
+                  style={{
+                    fontSize: '2em',
+                    marginTop: '1em'
+                  }}>
+                  How to Get Started
+                </Header>
+                <p
+                  style={{
+                    fontSize: '1.33em',
+                    textAlign: 'center'
+                  }}
+                >
+                  Sign up your organization for a AMPS account, design custom ballots, and track outcomes with our results dashboard.
+                </p>
+                <Header as="h3" style={{ fontSize: '2em' }}>
+                  Blockchain for Transparency
+                </Header>
+                <p
+                  style={{
+                  fontSize: '1.33em',
+                  textAlign: 'center'
+                  }}
+                >
+                  Because voter data is permanently written to the Ethereum blockchain, AMPS is the safest, most transparent way to organize a vote.
+                </p>
+              </Grid.Column>
+              <Grid.Column floated="right" width={6}>
+                <Image
+                  bordered
+                  rounded
+                  size="large"
+                  src="https://images.unsplash.com/photo-1509374864550-ec7bcb9c17ff?ixlib=rb-0.3.5&s=250695a9f647ae3c0aad52c6ab6c01a7&auto=format&fit=crop&w=634&q=80"
+                />
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Segment>
         <Segment
           inverted
           vertical
@@ -80,7 +137,16 @@ class Landing extends React.Component {
               <Grid.Row>
                 <Grid.Column width={3}>
                   <Header style={{textAlign: 'left'}} inverted as="h4" content="About" />
-                  
+                  <List link inverted>
+                    <Link to="/aboutus">
+                      <List.Item as="a">About Us</List.Item>
+                    </Link>
+                    <br />
+                    <Link to="/">
+                      <List.Item as="a">White Paper</List.Item>
+                    </Link>
+                    
+                  </List>
                 </Grid.Column>
                 <Grid.Column width={3}>
                   <Header style={{textAlign: 'left'}} inverted as="h4" content="Actions" />
@@ -90,7 +156,7 @@ class Landing extends React.Component {
                     </Link>
                     <br />
                     <Link to="/createpoll">
-                      <List.Item as="a">Create Elections</List.Item>
+                      <List.Item as="a">Create Ballot</List.Item>
                     </Link>
                     <br />
                     <Link to="/voter">
@@ -99,10 +165,9 @@ class Landing extends React.Component {
                   </List>
                 </Grid.Column>
                 <Grid.Column width={7}>
-                  <Header style={{ textAlign: 'left' }} as="h4" inverted>Test</Header>
-                  <p>Elections.</p>
-                  
-                </Grid.Column>
+                  <Header style={{ textAlign: 'left' }} as="h4" inverted>AMPS</Header>
+                  <p>Elections and other collective decision-making processes are too important to risk the threat of data manipulation. Bind your decisions to the Ethereum blockchain with AMPS.</p>
+                                  </Grid.Column>
               </Grid.Row>
             </Grid>
           </Container>

@@ -62,8 +62,8 @@ class Dashboard extends React.Component {
     if (polls.length === 0 && this.state.loading === false) {
       pollComponent = (
         <div className="ballotImg">
-          <img src="https://c1.staticflickr.com/1/805/39390736730_b01c35326c_n.jpg" alt="No election Currently" />
-          <h2>No election to Display</h2>
+          <img src="https://c1.staticflickr.com/1/805/39390736730_b01c35326c_n.jpg" alt="No Ballots Currently" />
+          <h2>No Ballots to Display</h2>
         </div>
       );
     } else {
@@ -84,13 +84,13 @@ class Dashboard extends React.Component {
       <div>
         <div className="headers">
           <h2 className="welcome">Welcome, {this.props.currentUser}</h2>
-          <h2 className="dashboardTitle">Your election Dashboard</h2>
+          <h2 className="dashboardTitle">Your Ballot Dashboard</h2>
           <Link to="/createpoll">
             <Button
               primary
               className="buttonStyle blueMatch"
             >
-              Create election
+              Create Ballot
             </Button>
           </Link>
         </div>

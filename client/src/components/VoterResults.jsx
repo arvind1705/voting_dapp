@@ -5,7 +5,7 @@ import { Card } from 'material-ui';
 import { Menu } from 'semantic-ui-react';
 import { formatDate } from '../../../helpers/helpers';
 import '../style/voter.css';
-
+s
 class VoterResults extends React.Component {
   constructor(props) {
     super(props);
@@ -32,7 +32,7 @@ class VoterResults extends React.Component {
                 fontSize: '30px'
               }}
               >
-                BB
+                AMPS
               </h3>
             </Menu.Item>
           </Link>

@@ -94,13 +94,23 @@ class Signup extends React.Component {
     return (
       <div className="signup">
         <Card>
-          
+          <CardMedia
+            overlay={
+              <CardTitle
+                className="signupCardTitle"
+                title="Create Your Voting Account"
+                subtitle="Commit to data transparency for your collective decision-making"
+              />
+            }
+          >
+            <img src="https://c1.staticflickr.com/1/811/40376791054_b540b344b0_h.jpg" />
+          </CardMedia>
 
           <div>
             <CardText className="signupCardText">
               <TextField
                 fullWidth
-                hintText="Name"
+                hintText="Organization Name"
                 name="name"
                 errorText={this.props.signupNameError}
                 value={this.state.name}
@@ -112,7 +122,7 @@ class Signup extends React.Component {
 
               <TextField
                 fullWidth
-                hintText="Email"
+                hintText="Organization Email"
                 errorText={this.props.signupEmailError}
                 name="email"
                 value={this.state.email}
@@ -132,7 +142,13 @@ class Signup extends React.Component {
                 open={this.state.dialogOpen}
                 onRequestClose={this.handleClose}
               >
-                
+                <div>
+                    We have generated a unique, 64-digit password
+                    for you that will be associated with this account.
+                    You will need to enter this password when you log in.
+                    Please keep it safe by storing it in your computer
+                    keychain or electronic wallet.
+                </div>
                 <br />
                 <div>
                   Copy the password below to your clipboard:

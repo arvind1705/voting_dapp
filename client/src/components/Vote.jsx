@@ -131,7 +131,7 @@ class Vote extends React.Component {
                 fontSize: '30px'
               }}
               >
-                BB
+                AMPS
               </h3>
             </Menu.Item>
           </Link>

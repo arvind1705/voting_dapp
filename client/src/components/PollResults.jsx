@@ -119,10 +119,10 @@ class PollResults extends React.Component {
       scaleShowGridLines: false,
 
       // String - Colour of the grid lines
-      scaleGridLineColor: 'rgba(0,0,0,.05)',
+      scaleGridLineColor: 'rgba(0,0,0.7,.05)',
 
       // Number - Width of the grid lines
-      scaleGridLineWidth: 1,
+      scaleGridLineWidth: 0,
 
       // Boolean - Whether to show horizontal lines (except X axis)
       scaleShowHorizontalLines: false,

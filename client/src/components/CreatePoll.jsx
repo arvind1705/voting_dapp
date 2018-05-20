@@ -498,7 +498,7 @@ class CreatePoll extends React.Component {
                   <p>
                     While we are creating your ballot, please upload a CSV file
                     containing the email of each voter who is participating in the vote.
-                    Test will generate and email a unique ID for each participant,
+                    AMPS will generate and email a unique ID for each participant,
                     which they can then use to securely access your ballot.
                   </p>
                 </div>

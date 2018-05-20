@@ -25,8 +25,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false, 
   auth: {
-      user: 'ilovemeat96@gmail.com', 
-      pass: 'alpha1705romeo' 
+      user: process.env.EMAIL_PASSWORD, 
+      pass: process.env.EMAIL_ACCOUNT
   }
 });
 
@@ -40,7 +40,7 @@ const sendPasswordReset = (email, token) => {
       };
       let templateToSend = compiler(replacements);
       let mailPasswordOptions = {
-        from: '"Aravind" <ilovemeat96@gmail.com', 
+        from: '"AMPS" <ampsblockchain@gmail.com>', 
         to: `${email}`, 
         subject: 'Reset Password', 
         html: templateToSend
@@ -79,7 +79,7 @@ const sendEmailCodes = (emails, pollId, ballotName, start, end, orgName) => {
         };
         let templateToSend = compiler(replacements);
         let emailCodeOptions = {
-          from: '"Aravind" <ilovemeat96@gmail.com', 
+          from: '"AMPS" <ampsblockchain@gmail.com>', 
           to: `${recipient}`, 
           subject: `Submit a vote for ${ballotName}`, 
           html: templateToSend

@@ -19,7 +19,7 @@ class Nav extends React.Component {
               <h3 style={{
                 fontFamily: 'Hammersmith One',
                 fontSize: '30px'
-              }}>TEST</h3>
+              }}>AMPS</h3>
             </Menu.Item>
           </Link>
           <Link to='/dashboard'>
@@ -42,7 +42,7 @@ class Nav extends React.Component {
                   fontFamily: 'Roboto, sans-serif'
                 }}
               >
-                Create election
+                Create Ballot
               </h3>
             </Menu.Item>
           </Link>
@@ -65,7 +65,7 @@ class Nav extends React.Component {
               <h3 style={{
                   fontFamily: 'Hammersmith One',
                   fontSize: '30px'
-                }}>TEST</h3>
+                }}>AMPS</h3>
             </Menu.Item>
           </Link>
           <Menu.Item position='right'>
