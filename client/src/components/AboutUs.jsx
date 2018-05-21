@@ -16,7 +16,7 @@ const AboutUs = () => (
         </p>
         <br />
         <p>
-           provides a secure, electronic way to establish a chain of custody - a chronological paper trail - that traces the data that each voter contributes to an election. And because  is built on the Ethereum network, election data is publicly accessible and verifiable by a network of peers. (Please note that  is in early production and currently operates on the public Rinkeby Testnet. The app will be refactored to operate on the official network in the future).
+           AMPS provides a secure, electronic way to establish a chain of custody - a chronological paper trail - that traces the data that each voter contributes to an election. And because  is built on the Ethereum network, election data is publicly accessible and verifiable by a network of peers. (Please note that  is in early production and currently operates on the public Rinkeby Testnet. The app will be refactored to operate on the official network in the future).
         </p>
       </div>
     </div>
@@ -25,7 +25,7 @@ const AboutUs = () => (
       <div className="infographicHeader">
         <div className="gridItem">
           <p>
-             uses blockchain technology to enable its secure, online voting system.
+             AMPS uses blockchain technology to enable its secure, online voting system.
             <br />
             If you are new to blockchain, the following provides a quick introduction:
           </p>
@@ -50,17 +50,11 @@ const AboutUs = () => (
           <br />
           <br />
           <p className="blockchainIntro">
-            <span className="votingProcessIntro"><strong>Below is a high-level summary of the  voting process:</strong></span>
+            {/* <span className="votingProcessIntro"><strong>Below is a high-level summary of the  voting process:</strong></span> */}
           </p>
         </div>
       </div>
-      <div className="grid1">
-        <div className="gridItem">
-          <div className="votingProcess">
-            <img src="https://c1.staticflickr.com/1/817/26386155337_748ecf2056_c.jpg" alt=" voting process" />
-          </div>
-        </div>
-      </div>
+      
     </div>
     <p className="sectionTitle">Getting Started</p>
     <div className="grid1">
