@@ -43,7 +43,7 @@
     "moment": "^2.22.0",
     "mysql": "^2.15.0",
     "mysql2": "^1.5.3",
-    "nodemailer": "^4.6.3",
+    "nodemailer": "^6.4.16",
     "npm": "^6.0.0",
     "random-number": "0.0.9",
     "random-words": "^1.0.0",
